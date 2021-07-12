@@ -1,0 +1,62 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Kwowt" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_500</item>
+        <item name="colorPrimaryVariant">@color/blue_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="actionMenuTextColor">@color/white</item>
+
+        <!-- Status bar color. -->
+       <item name="android:fontFamily">@font/proxinova_regular</item>
+       <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="ViewCard" parent="CardView.Light">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="android:backgroundTint">@color/black</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+    </style>
+
+    <style name="QuotePreview" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:text">@string/sample_quote</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+    </style>
+
+    <style name="AuthorPreview" parent="QuotePreview">
+        <item name="android:text">@string/quote_by</item>
+        <item name="android:gravity">end</item>
+    </style>
+
+    <style name="Description" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_marginTop">@dimen/margin_top</item>
+        <item name="android:layout_marginStart">@dimen/margin_start</item>
+        <item name="android:text">@string/change_ts_quote</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="Quote" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/proxinova_bold</item>
+        <item name="android:text">@string/text_size</item>
+        <item name="android:layout_marginTop">@dimen/text_margin_top</item>
+    </style>
+
+    <style name="Author" parent="Quote">
+        <item name="android:text">@string/author_size</item>
+    </style>
+
+    <style name="QuoteOne" parent="Quote">
+        <item name="android:text">@string/quote_text_style</item>
+    </style>
+
+    <style name="DescriptionOne" parent="Description">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:text">@string/change_t_quote</item>
+    </style>
+
+</resources>

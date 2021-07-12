@@ -1,0 +1,111 @@
+Save date in shared pref.
+check the date from shp if it doesn't match update the quote.
+get the date from the shared pref to update the next day quote.
+
+change text size of quote
+change text size of author
+
+change font size of quote
+change font size of author
+
+alignment change of author (only)
+
+check cardview size and set author text according to it. Take quote for reference.
+Please note once you saved the settings it will change in the next widget update.
+Please note once you saved the settings it will change when the next time widget updates.
+Please note your saved settings will come into effect in the next widget updates.
+
+<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/change_t_quote"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="23dp"
+            android:text="@string/text_style"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/text_style_spin"
+                android:layout_width="200dp"
+                android:spinnerMode="dropdown"
+                android:layout_gravity="end"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/change_ag_pos"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="23dp"
+            android:text="@string/author_text"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/author_alignment_spin"
+                android:layout_width="200dp"
+                android:spinnerMode="dropdown"
+                android:layout_gravity="end"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sample_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/quote_by"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="end"
+        android:fontFamily="sans-serif"
+        android:textStyle="italic|bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />

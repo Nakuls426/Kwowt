@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="textSizes">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="alignmentPosition">
+        <item>Right</item>
+        <item>Center</item>
+        <item>Left</item>
+    </string-array>
+
+    <string-array name="textStyle">
+        <item>Normal</item>
+        <item>Bold</item>
+        <item>Italic</item>
+        <item>Bold italic</item>
+    </string-array>
+
+    <string-array name="font">
+        <item>roboto</item>
+        <item>berkshire-swash</item>
+        <item>amatica</item>
+        <item>oswald</item>
+        <item>teko</item>
+        <item>dancing-script</item>
+        <item>walt-disney</item>
+        <item>josefin-sans</item>
+        <item>josefin-slab</item>
+
+    </string-array>
+    
+    <string-array name="lang">
+        <item>English</item>
+        <item>Hindi</item>
+    </string-array>
+</resources>
+
+<!--
+<item>dancing-script</item>
+<item>sans-serif-light</item>
+<item>sans-serif-medium</item>
+<item>sans-serif-thin</item>
+<item>sans-serif-condensed-light</item>
+<item>sans-serif-small-caps</item>
+<item>serif-monospace</item>-->

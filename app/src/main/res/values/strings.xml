@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Kwowt</string>
+    <string name="sample_quote"> Accept the terrible responsibility of life with eyes wide open.</string>
+    <string name="dialog_sample_quote"> Accept the terrible responsibility of life with <br/> eyes wide open.</string>
+    <string name ="quote_by"> — jordan peterson</string>
+    <string name="change_ts_quote">Change the text size of quote and author according to your preference. <b>Note: Preview may vary from actual home screen widget.</b> </string>
+    <string name="text_size">Quote size  </string>
+    <string name="author_size">Author size </string>
+    <string name="change_ag_pos">Change the alignment of quote and author according to your preference.</string>
+    <string name="author_text">Author alignment </string>
+    <string name="change_t_quote">Set the quote and author text style.</string>
+    <string name="change_the_fq">Set the font of quote and author. According to your preference</string>
+    <string name="change_quote_font">Quote font</string>
+    <string name="change_author_font">Author font</string>
+    <string name="quote_text_style">Quote text style</string>
+    <string name="quote_author_style">Author text style</string>
+    <string name="save">Save</string>
+    <string name="quote_alignment">Quote alignment</string>
+    <string name="todo">to_do</string>
+    <string name="set_language">Set quote language according to your preference.</string>
+    <string name="set_language_q">Select language </string>
+    <string name="set_color">Set the color of quote and author. <b>Note: Select black color if you have a dark background wallpaper.</b></string>
+    <string name="select_color">Choose color</string>
+    <string name="cancel_dialog">Cancel</string>
+    <string name="color">Color</string>
+    <string name="opacity">Opacity</string>
+    <string name="apply_setting">Apply Settings</string>
+    <string name="hindi_quote">हम ने अक्सर तुम्हारी राहों में,रुक कर अपना ही इंतिज़ार किया।</string>
+    <string name="hindi_quote_by">गुलज़ार</string>
+    <string name="about">About</string>
+    <string name="about_text">Kwowt (Quote) is an app that let\'s add quote widget to home screen. The quotes are available
+        in two languages English and Hindi</string>
+    <string name="version">Version 1.0</string>
+    <string name="created_by">Created by Nakul Singh</string>
+    <string name="widget_will_update_in_every_2_hours">Note : Widget will update in every 2 hours.</string>
+    <string name="github">GitHub</string>
+</resources>
