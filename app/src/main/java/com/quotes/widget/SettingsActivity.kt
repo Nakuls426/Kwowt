@@ -74,6 +74,13 @@ class SettingsActivity : AppCompatActivity(),AdapterView.OnItemSelectedListener,
         }
     }
 
+    override fun onPause() {
+        super.onPause()
+        Log.d("SettingsActivity","OnPause Called")
+        jsonRequest(Const.ENGLISH_QUOTE_API)
+        jsonRequest(Const.HINDI_QUOTE_API)
+    }
+
     private fun jsonRequest(api:String) {
         val englishQuoteRequest = JsonObjectRequest(0,api,null, {
             val saveFile = if (api == Const.ENGLISH_QUOTE_API) "eng-quote.json" else "hin-quote.json"
