@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:id="@+id/root_layout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
         android:layout_width="300dp"
@@ -72,7 +73,7 @@
 
         <com.nakul.widget.ColorSeekBar
             android:id="@+id/color_seek_bar"
-            android:layout_width="250dp"
+            android:layout_width="wrap_content"
             app:showAlphaBar="true"
             app:barHeight="10dp"
             app:barRadius="10dp"
