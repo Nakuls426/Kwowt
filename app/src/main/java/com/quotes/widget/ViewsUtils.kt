@@ -40,31 +40,44 @@ open class ViewsUtils {
             val resource = ResourcesCompat.getFont(context, selectFont(font!!))
 
             when (size) {
-                "Small" -> view.setTextAppearance(android.R.style.TextAppearance_Small).also {
+                "Small" -> if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    view.setTextAppearance(android.R.style.TextAppearance_Small).also {
+                        view.typeface = Typeface.create(resource,style!!)
+                        quoteAlignment1(view,gravity,color)
+                    }
+                }
+                else {
+                    view.textSize = 41F
                     view.typeface = Typeface.create(resource,style!!)
                     quoteAlignment1(view,gravity,color)
                 }
 
-                "Medium" -> view.setTextAppearance(android.R.style.TextAppearance_Medium).also {
+                "Medium" -> if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    view.setTextAppearance(android.R.style.TextAppearance_Medium).also {
+                        view.typeface = Typeface.create(resource,style!!)
+                        quoteAlignment1(view,gravity,color)
+                    }
+                }
+                else {
+                    view.textSize = 51F
                     view.typeface = Typeface.create(resource,style!!)
                     quoteAlignment1(view,gravity,color)
                 }
 
-                "Large" -> view.setTextAppearance(android.R.style.TextAppearance_Large).also {
+                "Large" -> if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    view.setTextAppearance(android.R.style.TextAppearance_Large).also {
+                        view.typeface = Typeface.create(resource,style!!)
+                        quoteAlignment1(view,gravity,color)
+                    }
+                }
+                else {
+                    view.textSize = 61F
                     view.typeface = Typeface.create(resource,style!!)
                     quoteAlignment1(view,gravity,color)
                 }
             }
         }
 
-        fun textSize(view: TextView) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                view.setTextAppearance(android.R.style.TextAppearance_Small)
-            }
-            else {
-                view.textSize = 20F
-            }
-        }
         fun setAuthorPreview(view: TextView, size: String?, style: Int?, font: String?, color: Int,context: Context) {
             val resource = ResourcesCompat.getFont(context, selectFont(font!!))
 
@@ -76,13 +89,32 @@ open class ViewsUtils {
                         view.setTextColor(color)
                     }
                 }
+                else {
+                        view.textSize = 41F
+                        view.typeface = Typeface.create(resource, style!!)
+                        view.setTextColor(color)
+                }
 
-                "Medium" -> view.setTextAppearance(android.R.style.TextAppearance_Medium).also {
+                "Medium" -> if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    view.setTextAppearance(android.R.style.TextAppearance_Medium).also {
+                        view.typeface = Typeface.create(resource, style!!)
+                        view.setTextColor(color)
+                    }
+                }
+                else {
+                    view.textSize = 51F
                     view.typeface = Typeface.create(resource, style!!)
                     view.setTextColor(color)
                 }
 
-                "Large" -> view.setTextAppearance(android.R.style.TextAppearance_Large).also {
+                "Large" -> if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    view.setTextAppearance(android.R.style.TextAppearance_Large).also {
+                        view.typeface = Typeface.create(resource, style!!)
+                        view.setTextColor(color)
+                    }
+                }
+                else {
+                    view.textSize = 61F
                     view.typeface = Typeface.create(resource, style!!)
                     view.setTextColor(color)
                 }
